@@ -76,8 +76,7 @@ while True:
               print('inalid number press')
              
     else:
-          print("press invalid number")
-    total_order =0    
+          print("press invalid number")   
     Next_Order = input("Do You Want anythink else:Yes/No")
     print( Next_Order)
     if Next_Order  == "No":
@@ -87,4 +86,4 @@ while True:
          print("Order your favourite menu")
     else:
         print("enter correct input")
-    print(total_order)  
+      
