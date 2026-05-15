@@ -1,4 +1,7 @@
 # meal order
+total_order = 0
+total_bill = 0
+print("Order your Favourite Food")
 while True:
     order_meal = int(input("""enter input number:
           1. breakfast
@@ -11,76 +14,86 @@ while True:
            1.POHA
            2.DOSA
            3.IDALI
-           4.UTAPA """)
-       total_order +=1 
-       order_breakfast = int(input("enter input number:"))
-       
+           4.UTAPA """) 
+       order_breakfast = int(input("enter input number:")
        if order_breakfast ==1:
-          print("POHA")
+          print("You Have Order:POHA")
           print("per plate:",10,"rupees")
+          cost = 10
        elif order_breakfast == 2:
-            print("DOSA")
+            print("You Have Order:DOSA")
             print("per plate:",25,"rupees")
+            cost = 25
        elif order_breakfast == 3:
-            print("IDALI")
+            print("You Have Order:IDALI")
             print("per plate:",20,"rupees")
+            cost = 20
        elif order_breakfast == 4:
-            print("UTAPA")
+            print("You Have Order:UTAPA")
             print("per plate:",25,"rupees")
+            cost = 25
        else:
-            print("menu not avilable") 
+            print("Enter valid number") 
        
     elif order_meal == 2:
-         
          print(""" Menu of Lunch:
            1.PAV BHAJI
            2.PANEER
            3.CHAPATI
-            4.BAKAR ANI THESA """)
+           4.BAKAR ANI THESA """)
          order_Lunch = int(input("enter input number:"))
          if order_Lunch == 1:
-            print("PAV BHAJI")
+            print("You Have Order:PAV BHAJI")
             print("per plate:",35,"rupees")
+            cost = 35
          elif order_Lunch == 2:
-            print("PANEER")
+            print("You Have Order:PANEER")
             print("per plate:",25,"rupees")
+            cost = 25
          elif order_Lunch == 3:
-            print("CHAPATI")
+            print("You Have Order:CHAPATI")
             print("per plate:",10,"rupees")
+            cost = 10
          elif order_Lunch == 4:
-            print("BHAKAR ANI THESA") 
+            print("You Have Order:BHAKAR ANI THESA") 
             print("per plate:",35,"rupees")
+            cost = 35
          else:
-           print("invalid number you are press")
+           print("invalid number")
      elif order_meal == 3:
-        
-         print(""" Menu of Dinner:
+        print(""" Menu of Dinner:
            1.DAL CHAVAL
            2.KHICHADI
            3.VEG PULAV
            4.BAKAR ANI PITAL""")
          order_Dinner = int(input("enter input number:"))
          if order_Dinner == 1:
-             print("DAL CHAVAL")
+             print("You Have Order:DAL CHAVAL")
              print("per plate:",30,"rupees")
+             cost = 30
          elif order_Dinner == 2:
-              print("KICHADI")
+              print("You Have Order:KICHADI")
               print("per plate:",15,"rupees")
+              cost = 15
          elif order_Dinner == 3:
-              print("VEG PULAV")
+              print("You Have Order:VEG PULAV")
               print("per plate:",20,"rupees")
+              cost = 20
          elif order_Dinner == 4:
-              print("BHAKAR ANI PITLA") 
+              print("You Have Order:BHAKAR ANI PITLA") 
               print("per plate:",35,"rupees")
+              cost = 35
          else:
-              print('inalid number press')
+              print('Enter valid number ')
              
     else:
-          print("press invalid number")   
+          print("Enter invalid number") 
+    total_order += 1
+    total_bill += cost
     Next_Order = input("Do You Want anythink else:Yes/No")
     print( Next_Order)
     if Next_Order  == "No":
-       print("Ok Thank of Current Order") 
+       print("Thank you") 
        break
     elif Next_Order == "Yes":
          print("Order your favourite menu")
