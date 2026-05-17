@@ -1,0 +1,89 @@
+# Food Ordering system
+# creat the fist class and then we import
+def meal_order(Break_fast,Lunch,Dinner):
+    your_order = int(input("""
+                 1. enter 1 for Break_fast
+                 2. enter 2 for Lunch
+                 3. enter 3 for Dinner """))
+    if your_order == 1:
+        print("you want to check menu_list:")
+        list_of_fast = (f"""
+                  1.POHA
+                  2.DOSA
+                  3.IDALI
+                  4.UTAPA  """)
+        show = int(input("press 1,0"))
+        if show == 1:
+            print(list_of_fast)
+        else:
+            print('ok proceed')
+        def Break_fast(your_fast ):
+            order =input("order your favourite fast")
+            if order == "POHA":
+                print('you order POHA')
+            elif order == "DOSA":
+                print('you order DOSA')
+            elif order == "IDALI":
+                print('you order IDALI')
+            elif order == "UTAPA":
+                print('you order UTAPA')
+            else:
+                print("invalid order")
+        Break_fast('your_fast')        
+    elif your_order == 2:
+        print("you want to check menu_list:")
+        list_of_Lunch = (f"""
+                  1.PHAVBHAJI
+                  2.PANEER
+                  3.CHAPATI
+                  4.KHICHADI  """)
+        show = int(input("press 1,0"))
+        if show == 1:
+            print(list_of_Lunch)
+        else:
+            print('ok proceed')    
+        def Lunch(you_lunch):
+            order =input("order your favourite Lunch")
+            if order == "PAVBHAJI":
+                print('you order PHAVBHAJI')
+            elif order == "PANEER":
+                print('you order PANEER')
+            elif order == "CHAPATI":
+                print('you order CHAPATTI')
+            elif order == "KHICHADI":
+                print('you order KHICHADI')
+            else:
+                print("invalid order")     
+        Lunch('you_lunch')
+    elif your_order == 3:
+        print("you want to check menu_list:")
+        list_of_Dinner = (f"""
+                  1.PULAV
+                  2.VEGPULAV
+                  3.DAL CHAVAL
+                  4.SANDWICH """)
+        show = int(input("press 1,0"))
+        if show == 1:
+            print(list_of_Dinner)
+        else:
+            print('ok proceed')    
+        def Dinner(you_Dinner):
+            order =input("order your favourite Dineer")
+            if order == "PULAV":
+                print('you order PULAV')
+            elif order == "VEGPULAV":
+                print('you order VEG PULAV')
+            elif order == "DAL CHAVAL":
+                print('you order DAL CHAVAL')
+            elif order == "SANDWICH":
+                print('you order SANDWICH')
+            else:
+                print("invalid order")   
+        Dinner('you_Dinner')        
+meal_order('Break_fast','Lunch','Dinner')
+
+
+
+# how to import
+import food 
+food.meal_order("Break_fast","Lunch","Dinner")
