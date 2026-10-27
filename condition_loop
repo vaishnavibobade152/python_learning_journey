@@ -1,1 +1,24 @@
-
+# email = 'gmail.com'
+# password = '123'
+email = input("enter your mail:");
+password = input("enter your password:");
+for attempts in range (3):
+    if email == 'gmail.com' and password == '123':
+        print('welcome.')
+        break
+    elif email == 'gmail.com' and password!= '123':
+        print('your password not correct.')
+        print('''you have only 3 chance for your account login.''')
+        print(''' change are fail you account will be dismis ''')
+        password = input ('enter your password:')
+    elif email != 'gmail.com' and password== '123':
+        print('your email not correct.')
+        print('''you have only 3 chance for your account login.''')
+        print(''' change are fail you account will be dismis ''')
+        email = input ('enter your email:')
+    else:
+        print('both are email and password')
+else:
+    print('no longer user')
+    
+    
