@@ -1,0 +1,24 @@
+#guessing game :
+import random
+ran_num = random.randint(1,10)
+print(ran_num)
+user_input = int(input('enter your number'))
+print(user_input)
+count =0
+while True:
+    if ran_num == user_input:
+        print("your gussing is right.")
+        break
+    elif ran_num!= user_input:
+         print("your gusses wrong")
+         if ran_num >user_input:
+             print('ran_number is big')
+             user_input = int(input('enter your number')) 
+             if ran_num == user_input:
+                print('correct guess')
+   else:
+         print("ran_number is small")
+         user_input = int(input('enter your number'))
+         if ran_num == user_input:
+            print('correct guess')
+        
